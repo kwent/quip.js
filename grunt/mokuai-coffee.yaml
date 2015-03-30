@@ -1,0 +1,6 @@
+quip:
+    src: src/quip/**/*.coffee
+    dest: dist/quip.js
+    options:
+        exports: Quip
+        autoexports: true

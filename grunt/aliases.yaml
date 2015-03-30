@@ -1,0 +1,23 @@
+default:
+    - coffeelint:quip
+    - clean:tmp
+    - coffee:quip-cli
+    - concat:quip-cli
+    - mokuai-coffee:quip
+    - shell:quip-browserify
+    - uglify:quip
+    - concat:quip-browser
+    - clean:tmp
+
+test:
+    - default
+    - nodeunit:all
+    - shell:quip-cli
+    
+test-quip:
+    - default
+    - nodeunit:all
+    
+test-quip-cli:
+    - default
+    - shell:quip-cli

@@ -1,0 +1,9 @@
+quip-cli:
+    options:
+      banner: "#!/usr/bin/env node\n\n"
+    src: tmp/coffee/quip-cli.js
+    dest: bin/quip.js
+    
+quip-browser:
+    src: dist/quip.min.js
+    dest: test/browser/js/quip.min.js

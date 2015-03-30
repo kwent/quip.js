@@ -1,0 +1,3 @@
+quip:
+    src: dist/quip.min.js
+    dest: dist/quip.min.js

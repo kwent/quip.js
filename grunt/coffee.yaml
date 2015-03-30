@@ -1,0 +1,6 @@
+options:
+    bare: true
+    
+quip-cli:
+    src: src/cli/quip.coffee
+    dest: tmp/coffee/quip-cli.js

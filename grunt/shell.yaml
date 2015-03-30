@@ -1,0 +1,6 @@
+quip-cli:
+    command: 'sh test/cli/quip.sh'
+
+quip-browserify:
+    # Workaround cause gulp-browserify doesn't work.
+    command: 'browserify -r ./dist/quip.js:quip.Quip > ./dist/quip.min.js'
