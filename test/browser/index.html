@@ -2,7 +2,7 @@
 
   <head>
     <title>Quip Browserify</title>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.13/angular.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ace/1.1.8/ace.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/quip.min.js"></script>
     <script src="js/index.js"></script>
@@ -13,7 +13,7 @@
     OSX: <pre>open -a Google\ Chrome --args --disable-web-security</pre>
     Linux: <pre>chromium-browser --disable-web-security</pre>
     Windows: <pre>chrome.exe --disable-web-security</pre>
-    
+
     <h2>Quip Browserify</h2>
     <div ng-controller="QuipController">
       <form novalidate class="simple-form">
@@ -24,27 +24,27 @@
         API:
         <select ng-model="quipApiNameSelected" ng-options="option.value as option.name for option in quipApiName">
         </select>
-        
+
         Method:
         <select ng-model="quipMethodNameSelected" ng-options="option as option for option in methodNameOptions">
         </select>
         <br/>
         <br/>
-        
+
         <h2>Request parameters</h2>
         <div id="parametersEditor" ng-model="parametersEditor" style="height:100px; width: 25%">{"key":"value"}</div>
-        
+
         <br/>
         <br/>
-        
+
         <input ng-model="quipButtonSubmit" type="submit" ng-click="request()" value="{{quipButtonSubmit}}" />
-        
+
         <h2 ng-show="quipResponseSuccess">Request response</h2>
         <div ng-show="quipResponseSuccess" id="responseEditor" ng-model="responseEditor" style="height:400px"></div>
-        
+
       </form>
     </div>
-    
+
   </body>
 
 </html>
