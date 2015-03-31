@@ -11,7 +11,11 @@
     "url": "https://github.com/kwent/quip.js.git"
   },
   "keywords": [
-    "Quip"
+    "quip",
+    "api",
+    "javascript",
+    "cli",
+    "browser"
   ],
   "author": {
     "name": "Quentin Rousseau",
