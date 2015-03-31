@@ -8,7 +8,7 @@ Simple Node.js wrapper (browser included) and CLI for Quip REST API.
 [![Dependency Status](https://david-dm.org/kwent/quip.js.svg?theme=shields.io)](https://www.npmjs.com/package/quip.js)
 [![devDependency Status](https://david-dm.org/kwent/quip.js/dev-status.svg?theme=shields.io)](https://www.npmjs.com/package/quip.js)
 
-![Quip Logo](https://github.com/kwent/quip.js/blob/master/assets/quip_logo.png?raw=1)
+[![Quip Logo](https://github.com/kwent/quip.js/blob/master/assets/quip_logo.png?raw=1)](https://quip.com/)
 
 See [Quip API Reference](https://quip.com/api/reference).
 
