@@ -1,6 +1,6 @@
 {
   "name": "quip.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple Node.js wrapper (browser included) and CLI for Quip API.",
   "main": "dist/quip.js",
   "scripts": {

@@ -33,7 +33,7 @@ execute = (api, cmd, options) ->
         process.exit 0
 
 program
-.version '1.0.0'
+.version '1.0.1'
 .description 'Quip Rest API Command Line'
 .option '-c, --config <path>', "Quip Configuration file. Default to ~/#{CONFIG_DIR}/#{CONFIG_FILE}"
 .option '-t, --accessToken <token>', 'Quip Access Token'
@@ -187,7 +187,7 @@ program
 .action (cmd, options) ->
     console.log '[DEBUG] : Quip Messages API command selected' if program.debug
     execute 'msg', cmd, options
-    
+
 program
 .command 'folders <method>'
 .alias 'fdr'
