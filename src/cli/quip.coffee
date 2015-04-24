@@ -33,7 +33,7 @@ execute = (api, cmd, options) ->
         process.exit 0
 
 program
-.version '1.0.1'
+.version '1.0.2'
 .description 'Quip Rest API Command Line'
 .option '-c, --config <path>', "Quip Configuration file. Default to ~/#{CONFIG_DIR}/#{CONFIG_FILE}"
 .option '-t, --accessToken <token>', 'Quip Access Token'
