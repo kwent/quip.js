@@ -58,7 +58,7 @@ execute = function(api, cmd, options) {
   });
 };
 
-program.version('1.0.2').description('Quip Rest API Command Line').option('-c, --config <path>', "Quip Configuration file. Default to ~/" + CONFIG_DIR + "/" + CONFIG_FILE).option('-t, --accessToken <token>', 'Quip Access Token').option('-d, --debug', 'Enabling Debugging Output').on('--help', function() {
+program.version('1.0.3').description('Quip Rest API Command Line').option('-c, --config <path>', "Quip Configuration file. Default to ~/" + CONFIG_DIR + "/" + CONFIG_FILE).option('-t, --accessToken <token>', 'Quip Access Token').option('-d, --debug', 'Enabling Debugging Output').on('--help', function() {
   console.log('  Commands:');
   console.log('');
   console.log('    threads|th [options] <method> Quip Threads API');
