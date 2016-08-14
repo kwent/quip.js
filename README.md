@@ -40,7 +40,7 @@ To get more information (parameters, response data, ...) use the [Quip API Refer
 # Javascript wrapper
 
 ```js
-var Quip = require('Quip');
+var Quip = require('Quip.js');
 var Quip = new Quip({
     // Quip Access Token (required)
     accessToken: 'accessToken'
