@@ -83,13 +83,13 @@ Quip.th.getRecentThreads(callback);
 // Threads API - Create a new document
 Quip.th.createDocument({title: 'Title', content: '<h1>Title</h1><p>First paragraph</p>'}, callback);
 // Threads API - Edit a document by prepending content
-Quip.th.editDocument({thread_id: 'threadId', content: '<p>New Section</p>', location: Quip.prototype.Operation.PREPEND}, callback);
+Quip.th.editDocument({thread_id: 'threadId', content: '<p>New Section</p>', location: Quip.Operation.PREPEND}, callback);
 // Messages API - Create a new message in a thread_id
 Quip.msg.newMessage({thread_id: 'threadId', content: 'New Message'}, callback);
 // Folders API - Create a new folder with a green cover
-Quip.fdr.createFolder({title: 'My New Folder', color: Quip.prototype.Color.GREEN}, callback);
+Quip.fdr.newFolder({title: 'My New Folder', color: Quip.Color.GREEN}, callback);
 // Folders API - Update folder_id with a red cover
-Quip.fdr.updateFolder({folder_id: 'folderId', color: Quip.prototype.Color.RED}, callback);
+Quip.fdr.updateFolder({folder_id: 'folderId', color: Quip.Color.RED}, callback);
 // Users API - Get all user's contacts
 Quip.usr.getContacts(callback);
 
