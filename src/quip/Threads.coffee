@@ -35,6 +35,17 @@ class Threads extends API
                 path: 'threads/?' + params['ids'].join(',')
         }
 
+    deleteThread: (params, done) ->
+
+        @requestAPI {
+            params, done
+            requiredParams: [ 'thread_id' ]
+            apiInfos:
+                version: 1
+                method: 'POST'
+                path: 'threads/delete'
+        }
+
     createDocument: (params, done) ->
 
         @requestAPI {
@@ -44,6 +55,17 @@ class Threads extends API
                 version: 1
                 method: 'POST'
                 path: 'threads/new-document'
+        }
+
+    copyDocument: (params, done) ->
+
+        @requestAPI {
+            params, done
+            requiredParams: [ 'thread_id' ]
+            apiInfos:
+                version: 1
+                method: 'POST'
+                path: 'threads/copy-document'
         }
 
     editDocument: (params, done) ->

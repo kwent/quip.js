@@ -206,10 +206,11 @@
                   var filtered, k, keys, to_exclude, v;
                   to_exclude = ['constructor', 'request', 'requestAPI', 'getMethods'];
                   keys = (function() {
-                    var results;
+                    var ref, results;
+                    ref = this;
                     results = [];
-                    for (k in this) {
-                      v = this[k];
+                    for (k in ref) {
+                      v = ref[k];
                       if (typeof v === 'function') {
                         results.push(k);
                       }
@@ -274,10 +275,11 @@
                   var filtered, k, keys, to_exclude, v;
                   to_exclude = ['constructor', 'request', 'requestAPI', 'getMethods'];
                   keys = (function() {
-                    var results;
+                    var ref, results;
+                    ref = this;
                     results = [];
-                    for (k in this) {
-                      v = this[k];
+                    for (k in ref) {
+                      v = ref[k];
                       if (typeof v === 'function') {
                         results.push(k);
                       }
@@ -347,10 +349,11 @@
                   var filtered, k, keys, to_exclude, v;
                   to_exclude = ['constructor', 'request', 'requestAPI', 'getMethods'];
                   keys = (function() {
-                    var results;
+                    var ref, results;
+                    ref = this;
                     results = [];
-                    for (k in this) {
-                      v = this[k];
+                    for (k in ref) {
+                      v = ref[k];
                       if (typeof v === 'function') {
                         results.push(k);
                       }
@@ -486,6 +489,19 @@
                   });
                 };
         
+                Threads.prototype.deleteThread = function(params, done) {
+                  return this.requestAPI({
+                    params: params,
+                    done: done,
+                    requiredParams: ['thread_id'],
+                    apiInfos: {
+                      version: 1,
+                      method: 'POST',
+                      path: 'threads/delete'
+                    }
+                  });
+                };
+        
                 Threads.prototype.createDocument = function(params, done) {
                   return this.requestAPI({
                     params: params,
@@ -495,6 +511,19 @@
                       version: 1,
                       method: 'POST',
                       path: 'threads/new-document'
+                    }
+                  });
+                };
+        
+                Threads.prototype.copyDocument = function(params, done) {
+                  return this.requestAPI({
+                    params: params,
+                    done: done,
+                    requiredParams: ['thread_id'],
+                    apiInfos: {
+                      version: 1,
+                      method: 'POST',
+                      path: 'threads/copy-document'
                     }
                   });
                 };
@@ -548,10 +577,11 @@
                   var filtered, k, keys, to_exclude, v;
                   to_exclude = ['constructor', 'request', 'requestAPI', 'getMethods'];
                   keys = (function() {
-                    var results;
+                    var ref, results;
+                    ref = this;
                     results = [];
-                    for (k in this) {
-                      v = this[k];
+                    for (k in ref) {
+                      v = ref[k];
                       if (typeof v === 'function') {
                         results.push(k);
                       }
@@ -640,10 +670,11 @@
                   var filtered, k, keys, to_exclude, v;
                   to_exclude = ['constructor', 'request', 'requestAPI', 'getMethods'];
                   keys = (function() {
-                    var results;
+                    var ref, results;
+                    ref = this;
                     results = [];
-                    for (k in this) {
-                      v = this[k];
+                    for (k in ref) {
+                      v = ref[k];
                       if (typeof v === 'function') {
                         results.push(k);
                       }
