@@ -1,3 +1,7 @@
+## DEPRECATED
+
+Please use the official node library: https://github.com/quip/quip-api/tree/master/nodejs
+
 # quip.js
 
 Simple Node.js wrapper (browser included) and CLI for Quip REST API.
